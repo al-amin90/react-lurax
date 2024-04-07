@@ -5,7 +5,7 @@ import { Outlet } from 'react-router-dom';
 const Root = () => {
     return (
         // 
-        <div className='bg-gradient-to-r from-[#838592] font-work to-[#EAF2F5]'>
+        <div className='bg-gradient-to-r from-[#0C1022] font-work to-[#838592]'>
             <Navbar></Navbar>
             <Outlet></Outlet>
 

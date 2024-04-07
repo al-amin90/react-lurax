@@ -33,8 +33,8 @@ const Banner = () => {
                 {
                     images.map(i => <SwiperSlide key={i.id}>
                         <div className='relative'>
-                            <div className='w-full absolute bg-black h-[calc(100vh-101px)]'>sds</div>
-                            <img className='min-w-full bg-cover bg-no-repeat object-cover h-[calc(100vh-101px)]  opacity-90' src={i.image} alt="" />
+                            {/* <div className='w-full absolute bg-black h-[calc(100vh-101px)]'>sds</div> */}
+                            <img className='min-w-full bg-cover bg-no-repeat object-cover h-[20rem] md:h-[calc(100vh-101px)]  opacity-90' src={i.image} alt="" />
                         </div>
                     </SwiperSlide>)
                 }
