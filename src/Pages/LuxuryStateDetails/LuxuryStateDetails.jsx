@@ -14,9 +14,9 @@ const LuxuryStateDetails = () => {
     return (
         <div className='max-w-5xl pb-20 mx-auto  mt-20'>
             <div className="  p-6 bg-[#75d5cd46] rounded-lg space-y-12">
-                <article className="space-y-8  text-white flex-1">
+                <article className="space-y-8 text-white flex-1">
                     <img className='object-cover py-1 rounded-lg w-full' src={image} alt="" />
-                    <div className='flex gap-6'>
+                    <div className='flex flex-col md:flex-row  gap-6'>
                         <div className='flex-1'>
                             <div className="space-y-6 ">
                                 <h1 className="text-3xl font-bold md:tracking-tight md:text-4xl">{estate_title}</h1>
@@ -44,7 +44,7 @@ const LuxuryStateDetails = () => {
                             </div>
                         </div>
 
-                        <div className="text-white flex-1 border-l pl-9 border-dashed ">
+                        <div className="text-white flex-row-reverse flex-1 md:border-l md:pl-9 border-dashed ">
                             <p className='font-bold '>Description : <span className='font-medium'> {description}</span></p>
                             <div className=' mt-5'>
                                 <h5 className='text-base font-semibold flex items-center gap-2'><FaLocationDot className="text-[#1ABA9B]"></FaLocationDot> Location: {location}</h5>
