@@ -9,7 +9,6 @@ const SingUp = () => {
     const {
         register,
         handleSubmit,
-        watch,
         formState: { errors },
     } = useForm()
 
@@ -20,6 +19,9 @@ const SingUp = () => {
             .then(result => {
                 userUpdate(name, imageurl)
                 console.log(result.user);
+            })
+            .catch(error => {
+                console.log(error);
             })
     }
 

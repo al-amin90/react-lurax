@@ -1,7 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import useAuth from '../../Hooks/useAuth';
 
 const Navbar = () => {
+    const { user, logout } = useAuth()
+
     const navLinks = <>
         <li><Link className='text-white bg-[#0c102296] font-bold shadow-xl py-2 px-4 rounded border border-gray-500' to="/">Home</Link></li>
         <li><Link className='text-white py-2 px-4' to="/">Update</Link></li>
@@ -29,27 +32,29 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end ">
-                    <div className='flex items-center justify-end'>
-                        <div className="dropdown dropdown-end mr-5">
-                            <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
-                                <div className="w-15 rounded-full">
-                                    <img alt="Tailwind CSS Navbar component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                    <div className=' justify-end'>
+                        {
+                            user ? <div className='flex items-center'>
+                                <div className="dropdown dropdown-end mr-5">
+                                    <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
+                                        <div className="w-15 rounded-full">
+                                            <img alt="Tailwind CSS Navbar component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                                        </div>
+                                    </div>
+                                    <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+
+                                        <li><a>Logout</a></li>
+                                        <li><a>Logout</a></li>
+                                    </ul>
                                 </div>
+                                <Link>
+                                    <button onClick={() => logout()} className="py-3 hover:bg-[#0c1022c2] px-7 rounded-md border-none text-white bg-[#0C1022]">log Out</button>
+                                </Link>
                             </div>
-                            <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                                <li>
-                                    <a className="justify-between">
-                                        Profile
-                                        <span className="badge">New</span>
-                                    </a>
-                                </li>
-                                <li><a>Settings</a></li>
-                                <li><a>Logout</a></li>
-                            </ul>
-                        </div>
-                        <Link to="/login">
-                            <button className="py-3 hover:bg-[#0c1022c2] px-7 rounded-md border-none text-white bg-[#0C1022]">Login</button>
-                        </Link>
+                                : <Link to="/login">
+                                    <button className="py-3 hover:bg-[#0c1022c2] px-7 rounded-md border-none text-white bg-[#0C1022]">Login</button>
+                                </Link>
+                        }
 
                     </div>
                 </div>

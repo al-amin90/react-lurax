@@ -9,7 +9,6 @@ const Login = () => {
     const {
         register,
         handleSubmit,
-        watch,
         formState: { errors },
     } = useForm()
 
@@ -19,6 +18,9 @@ const Login = () => {
         userLogin(email, password)
             .then(result => {
                 console.log(result.user);
+            })
+            .catch(error => {
+                console.log(error);
             })
 
     }

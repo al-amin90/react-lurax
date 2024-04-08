@@ -19,10 +19,10 @@ const Banner = () => {
             .then(res => res.json())
             .then(data => setImages(data))
     }, [])
-    console.log(images);
+
 
     return (
-        <div className='min-h-[calc(100vh-101px)] '>
+        <div className='min-h-[calc(100vh-96px)] '>
             <Swiper
                 pagination={{
                     dynamicBullets: true,
@@ -34,7 +34,7 @@ const Banner = () => {
                     images.map(i => <SwiperSlide key={i.id}>
                         <div className='relative'>
                             {/* <div className='w-full absolute bg-black h-[calc(100vh-101px)]'>sds</div> */}
-                            <img className='min-w-full bg-cover bg-no-repeat object-cover h-[20rem] md:h-[calc(100vh-101px)]  opacity-90' src={i.image} alt="" />
+                            <img className='min-w-full bg-cover bg-no-repeat object-cover h-[20rem] md:h-[calc(100vh-96px)]  opacity-90' src={i.image} alt="" />
                         </div>
                     </SwiperSlide>)
                 }
