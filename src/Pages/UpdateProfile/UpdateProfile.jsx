@@ -27,7 +27,7 @@ const UpdateProfile = () => {
     return (
         <div className="hero ">
             {/* 75d5cd46 */}
-            <div className="hero-content py-20 bg-[#75d5cd46]  w-full">
+            <div className="flex items-center justify-center py-20 bg-[#75d5cd46]  w-full">
                 <div className="card shrink-0 md:w-1/2 lg:w-2/6  rounded-lg shadow-2xl bg-[#1AB899] border border-[#75d5cd46]">
                     <h1 className='font-bold text-2xl mt-8 text-center text-[#0D1324]'>Update Profile</h1>
                     <form onSubmit={handleSubmit(onSubmit)} className="card-body font-montserrat p-6 ">

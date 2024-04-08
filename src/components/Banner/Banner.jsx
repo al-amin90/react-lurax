@@ -8,9 +8,6 @@ import 'swiper/css/pagination';
 
 // import required modules
 import { Pagination } from 'swiper/modules';
-import sli1 from '../../assets/sli1 (1).jpg'
-import sli2 from '../../assets/sli1 (7).jpg'
-import sli3 from '../../assets/sli1 (8).jpg'
 
 const Banner = () => {
     const [images, setImages] = useState([])
