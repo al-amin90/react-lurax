@@ -47,7 +47,10 @@ const Navbar = () => {
                                 <li><a>Logout</a></li>
                             </ul>
                         </div>
-                        <button className="py-3 hover:bg-[#0c1022c2] px-7 rounded-md border-none text-white bg-[#0C1022]">Login</button>
+                        <Link to="/login">
+                            <button className="py-3 hover:bg-[#0c1022c2] px-7 rounded-md border-none text-white bg-[#0C1022]">Login</button>
+                        </Link>
+
                     </div>
                 </div>
             </div>
