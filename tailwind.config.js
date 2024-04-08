@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        work: '  font-family: "Work Sans", sans-serif',
+        work: 'font-family: "Manrope", sans-serif',
         montserrat: '  font-family: "Montserrat", sans-serif',
       }
     },

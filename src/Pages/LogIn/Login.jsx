@@ -28,7 +28,7 @@ const Login = () => {
         <div>
             <div className="hero ">
                 <div className="hero-content py-20 bg-[#75d5cd46] w-full">
-                    <div className="card shrink-0 w-2/6 rounded-lg shadow-2xl bg-[#0C1022] ">
+                    <div className="card shrink-0 md:w-1/2 lg:w-2/6 rounded-lg shadow-2xl bg-[#0C1022] ">
                         <h1 className='font-bold text-2xl mt-8 text-center text-white'>Log In</h1>
                         <form onSubmit={handleSubmit(onSubmit)} className="card-body font-montserrat p-6 pb-2">
                             <div className="form-control">

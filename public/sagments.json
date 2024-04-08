@@ -1,0 +1,154 @@
+[
+    {
+        "id": 1,
+        "estate_title": "Luxury Beachfront Villa",
+        "segment_name": "Beachfront properties",
+        "image": "https://i.postimg.cc/tJ9VHg9H/09-1920x912.jpg",
+        "description": "Experience the epitome of luxury living in this exquisite beachfront villa. Featuring stunning ocean views, private beach access, and world-class amenities, this residence offers an unparalleled coastal lifestyle. With spacious interiors, modern design, and meticulous attention to detail, every aspect of this property exudes elegance and sophistication. Ideal for those seeking a serene retreat or lavish entertaining, this villa embodies coastal luxury at its finest.",
+        "price": "$5,000,000",
+        "status": "sale",
+        "area": "6000 sq ft",
+        "location": "Maui, Hawaii",
+        "facilities": [
+            "Infinity Pool",
+            "Private Beach",
+            "Gourmet Kitchen"
+        ],
+        "logo": "https://i.postimg.cc/2STD6KkN/212c1836bd0d2363eb4ffb48fe0b30e9.png"
+    },
+    {
+        "id": 2,
+        "estate_title": "Luxurious Penthouse in Manhattan",
+        "segment_name": "Penthouse",
+        "image": "https://i.postimg.cc/mDD0pYHx/penthhouse.jpg",
+        "description": "Indulge in luxury living in this stunning penthouse located in the heart of Manhattan. Offering panoramic city views, modern interiors, and exclusive amenities, this residence redefines urban sophistication. With spacious living areas, high-end finishes, and state-of-the-art features, this penthouse provides the ultimate in comfort and style. Whether entertaining guests or enjoying quiet evenings at home, this penthouse offers a prestigious Manhattan lifestyle.",
+        "price": "$20,000/month",
+        "status": "rent",
+        "area": "4000 sq ft",
+        "location": "Manhattan, New York",
+        "facilities": [
+            "Roof Terrace",
+            "Fitness Center",
+            "Concierge Service"
+        ],
+        "logo": "https://i.postimg.cc/9XPNCqXv/32a518b36c76eb4e7d0298aa777e2282.jpg"
+    },
+    {
+        "id": 3,
+        "estate_title": "Luxury Resort Retreat",
+        "segment_name": "Resorts",
+        "image": "https://i.postimg.cc/Fs7ntFzS/560ec9df2ac5c864a934d3fd4088ad2f-1920x1053.jpg",
+        "description": "Escape to paradise in this luxurious resort retreat. Surrounded by lush tropical gardens, pristine beaches, and world-class amenities, this destination is the epitome of indulgence. With luxurious accommodations, gourmet dining options, and a plethora of recreational activities, this resort offers an unparalleled vacation experience. Whether lounging by the pool, exploring the surrounding natural beauty, or indulging in spa treatments, guests are immersed in luxury at every turn.",
+        "price": "$1,500/night",
+        "status": "rent",
+        "area": "10000 sq ft",
+        "location": "Maldives",
+        "facilities": [
+            "Spa",
+            "Private Villas",
+            "Fine Dining"
+        ],
+        "logo": "https://i.postimg.cc/yYQj8mMr/04d4758a4d132406546511dffd6cb121.jpg"
+    },
+    {
+        "id": 4,
+        "estate_title": "Private Island Paradise",
+        "segment_name": "Private Islands",
+        "image": "https://i.postimg.cc/vTcRSWCg/752-view06-v011-extended-resize-mini.jpg",
+        "description": "Own your piece of paradise with this private island retreat. Enjoy exclusive privacy, pristine beaches, and unparalleled luxury in this secluded sanctuary. With expansive grounds, luxurious accommodations, and breathtaking ocean views, this island offers a rare opportunity for discerning buyers. Whether seeking a personal oasis or a unique investment opportunity, this private island paradise promises a life of luxury and tranquility.",
+        "price": "$10,000,000",
+        "status": "sale",
+        "area": "20 acres",
+        "location": "Caribbean",
+        "facilities": [
+            "Private Beach",
+            "Luxury Villas",
+            "Helipad"
+        ],
+        "logo": "https://i.postimg.cc/2STD6KkN/212c1836bd0d2363eb4ffb48fe0b30e9.png"
+    },
+    {
+        "id": 5,
+        "estate_title": "Luxury Oceanfront Mansion",
+        "segment_name": "Mansions",
+        "image": "https://i.postimg.cc/RZBmvp84/17-Aland-Islands-House-1-IMAGE-1500x825.jpg",
+        "description": "Live in grandeur in this magnificent oceanfront mansion. With breathtaking views, opulent interiors, and expansive grounds, this estate epitomizes luxury living. Featuring luxurious amenities, sophisticated design, and impeccable craftsmanship, every detail of this mansion exudes elegance and prestige. Whether hosting lavish parties or enjoying quiet moments with family, this oceanfront retreat offers the ultimate in comfort and sophistication.",
+        "price": "$15,000,000",
+        "status": "sale",
+        "area": "12000 sq ft",
+        "location": "Miami Beach, Florida",
+        "facilities": [
+            "Home Theater",
+            "Swimming Pool",
+            "Gated Entry"
+        ],
+        "logo": "https://i.postimg.cc/9XPNCqXv/32a518b36c76eb4e7d0298aa777e2282.jpg"
+    },
+    {
+        "id": 6,
+        "estate_title": "Luxury Hillside Villa",
+        "segment_name": "Villas",
+        "image": "https://i.postimg.cc/hvQntkcP/694723-1.jpg",
+        "description": "Discover unparalleled luxury in this hillside villa retreat. With panoramic views, lush gardens, and elegant interiors, this enclave offers a serene escape from the ordinary. Featuring spacious living areas, gourmet kitchens, and luxurious bedrooms, this villa is designed for modern living at its finest. Whether relaxing by the infinity pool, hosting gatherings in the outdoor entertaining spaces, or enjoying the tranquility of the surroundings, this villa offers a lifestyle of luxury and relaxation.",
+        "status": "sale",
+        "area": "8000 sq ft",
+        "location": "Ibiza, Spain",
+        "facilities": [
+            "Infinity Pool",
+            "Gourmet Kitchen",
+            "Private Terrace"
+        ],
+        "logo": "https://i.postimg.cc/yYQj8mMr/04d4758a4d132406546511dffd6cb121.jpg"
+    },
+    {
+        "id": 7,
+        "estate_title": "Luxury Lakeside Estate",
+        "segment_name": "Lakeside Properties",
+        "image": "https://i.postimg.cc/vZh5zkwm/lakeside-villas-at-crittenden.jpg",
+        "description": "Experience luxury living on the shores of a pristine lake in this elegant estate. With serene views, private dock access, and impeccable craftsmanship, this property offers an unparalleled lakeside retreat. Featuring luxurious amenities, expansive living spaces, and meticulously landscaped grounds, this estate is designed for refined living and entertaining. Whether enjoying water activities, dining al fresco, or simply taking in the natural beauty, this lakeside estate offers a lifestyle of luxury and tranquility.",
+        "price": "$12,500,000",
+        "status": "sale",
+        "area": "15000 sq ft",
+        "location": "Lake Tahoe, California",
+        "facilities": [
+            "Boat Dock",
+            "Outdoor Kitchen",
+            "Guest House"
+        ],
+        "logo": "https://i.postimg.cc/9XPNCqXv/32a518b36c76eb4e7d0298aa777e2282.jpg"
+    },
+    {
+        "id": 8,
+        "estate_title": "Luxury Golf Course Residence",
+        "segment_name": "Golf Course Properties",
+        "image": "https://i.postimg.cc/KjLQ0fm8/258465-1.jpg",
+        "description": "Live in luxury in this exquisite golf course residence. With sweeping views of the fairways, resort-style amenities, and impeccable design, this property offers an unparalleled golf course lifestyle. Featuring spacious interiors, high-end finishes, and state-of-the-art technology, this residence is designed for modern living and entertaining. Whether perfecting your swing on the course, relaxing at the clubhouse, or enjoying the scenic surroundings, this golf course residence offers the ultimate in luxury living.",
+        "price": "$3,500,000",
+        "status": "sale",
+        "area": "7000 sq ft",
+        "location": "Palm Springs, California",
+        "facilities": [
+            "Golf Simulator",
+            "Fitness Center",
+            "Clubhouse"
+        ],
+        "logo": "https://i.postimg.cc/yYQj8mMr/04d4758a4d132406546511dffd6cb121.jpg"
+    },
+    {
+        "id": 9,
+        "estate_title": "Luxury Cliffside Retreat",
+        "segment_name": "Cliffside Properties",
+        "image": "https://i.postimg.cc/gJf1c4sv/post-ranch-inn.jpg",
+        "description": "Retreat to luxury in this stunning cliffside residence. With breathtaking views, private terraces, and luxurious amenities, this property offers a tranquil escape from the ordinary. Featuring spacious living areas, gourmet kitchens, and lavish bedrooms, this residence is designed for modern comfort and style. Whether watching the sunset from the infinity pool, dining al fresco on the terrace, or simply enjoying the serenity of the surroundings, this cliffside retreat offers a lifestyle of luxury and relaxation.",
+        "price": "$6,500,000",
+        "status": "sale",
+        "area": "9000 sq ft",
+        "location": "Big Sur, California",
+        "facilities": [
+            "Infinity Pool",
+            "Wine Cellar",
+            "Home Gym"
+        ],
+        "logo": "https://i.postimg.cc/2STD6KkN/212c1836bd0d2363eb4ffb48fe0b30e9.png"
+    }
+]

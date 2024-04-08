@@ -6,6 +6,7 @@ import Root from "../layouts/Root";
 import Home from "../Pages/Home/Home";
 import SingUp from "../Pages/SingUp/SingUp";
 import Login from "../Pages/LogIn/Login";
+import LuxuryStateDetails from "../Pages/LuxuryStateDetails/LuxuryStateDetails";
 
 const router = createBrowserRouter([
     {
@@ -14,7 +15,8 @@ const router = createBrowserRouter([
         children: [
             {
                 index: true,
-                element: <Home></Home>
+                element: <Home></Home>,
+                loader: () => fetch('/sagments.json')
             },
             {
                 path: '/singup',
@@ -23,6 +25,11 @@ const router = createBrowserRouter([
             {
                 path: '/login',
                 element: <Login></Login>
+            },
+            {
+                path: '/state/:id',
+                element: <LuxuryStateDetails></LuxuryStateDetails>,
+                loader: () => fetch('/sagments.json')
             }
         ]
     },
