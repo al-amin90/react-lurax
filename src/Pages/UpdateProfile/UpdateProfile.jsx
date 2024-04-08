@@ -27,7 +27,7 @@ const UpdateProfile = () => {
     return (
         <div className="hero ">
             {/* 75d5cd46 */}
-            <div className="hero-content py-20 bg-white w-full">
+            <div className="hero-content py-20 bg-[#75d5cd46]  w-full">
                 <div className="card shrink-0 md:w-1/2 lg:w-2/6  rounded-lg shadow-2xl bg-[#1AB899] border border-[#75d5cd46]">
                     <h1 className='font-bold text-2xl mt-8 text-center text-[#0D1324]'>Update Profile</h1>
                     <form onSubmit={handleSubmit(onSubmit)} className="card-body font-montserrat p-6 ">
@@ -64,13 +64,9 @@ const UpdateProfile = () => {
                         </div>
 
                         <div className="form-control mt-6">
-                            <button type="submit" className="btn border-none text-[#0D1324] font-semibold text-base bg-[#3baaff]"> Register</button>
+                            <button type="submit" className="btn border-none text-white font-semibold text-base bg-[#0D1324]"> Update</button>
                         </div>
                     </form>
-
-                    <div className='text-white font-semibold px-6 mb-6 text-center text-base'>Already have an account? <Link to="/login" className=" font-normal text-[#0D1324] underline">
-                        Login
-                    </Link></div>
                 </div>
             </div>
         </div>

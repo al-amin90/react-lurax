@@ -1,14 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
 
 const Navbar = () => {
     const { user, logout } = useAuth()
 
     const navLinks = <>
-        <li><Link className='text-white bg-[#0c102296] font-bold shadow-xl py-2 px-4 rounded border border-gray-500' to="/">Home</Link></li>
-        <li><Link className='text-white py-2 px-4' to="/update">Update</Link></li>
-        <li><Link className='text-white py-2 px-4' to="/">User</Link></li>
+        <li><NavLink
+            className={({ isActive }) => isActive ? 'text-white bg-[#0c102296] font-bold shadow-xl py-2 px-4 rounded border border-gray-500' : 'text-white py-2 px-4'} to="/">Home</NavLink></li>
+        <li><NavLink
+            className={({ isActive }) => isActive ? 'text-white bg-[#0c102296] font-bold shadow-xl py-2 px-4 rounded border border-gray-500' : 'text-white py-2 px-4'} to="/update">Update</NavLink></li>
+        <li><NavLink
+            className={({ isActive }) => isActive ? 'text-white bg-[#0c102296] font-bold shadow-xl py-2 px-4 rounded border border-gray-500' : 'text-white py-2 px-4'} to="user">User</NavLink></li>
     </>
 
 
@@ -36,9 +39,9 @@ const Navbar = () => {
                         {
                             user ? <div className='flex items-center'>
                                 <div className="dropdown dropdown-end mr-5">
-                                    <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
-                                        <div className="w-15 rounded-full">
-                                            <img alt="Tailwind CSS Navbar component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                                    <div tabIndex={0} role="button" className="btn btn-ghost btn-circle mt-2 avatar">
+                                        <div className="w-16 rounded-full">
+                                            <img alt="user img" className='' src={user.photoURL} />
                                         </div>
                                     </div>
                                     <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
