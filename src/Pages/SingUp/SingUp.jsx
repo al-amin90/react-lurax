@@ -2,6 +2,7 @@ import { useForm } from "react-hook-form";
 import { FaGithub, FaGoogle } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import useAuth from "../../Hooks/useAuth";
+import { Flip, toast } from "react-toastify";
 
 const SingUp = () => {
     const { createUser, userUpdate } = useAuth()
@@ -15,9 +16,36 @@ const SingUp = () => {
     const onSubmit = (data) => {
         const { name, imageurl, email, password } = data;
 
+        if (password.length < 6) {
+            toast.error("Password must have 6 character", {
+                theme: "colored",
+                transition: Flip,
+            })
+            return;
+        }
+        if (!/^(?=.*[A-Z])/.test(password)) {
+            toast.error("Must have a UpperCase latter", {
+                theme: "colored",
+                transition: Flip,
+            })
+            return
+        }
+        if (!/^(?=.*[a-z])/.test(password)) {
+            toast.error("Must have a lowerCase latter", {
+                theme: "colored",
+                transition: Flip,
+            })
+            return
+        }
+
+
         createUser(email, password)
             .then(result => {
                 userUpdate(name, imageurl)
+                toast.success("Account create successfully", {
+                    theme: "colored",
+                    transition: Flip,
+                })
                 console.log(result.user);
             })
             .catch(error => {
