@@ -1,10 +1,14 @@
 import { useForm } from "react-hook-form";
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import useAuth from "../../Hooks/useAuth";
 import SocialMediaLogin from "../../components/SocialMediaLogin/SocialMediaLogin";
+import { Flip, toast } from "react-toastify";
 
 const Login = () => {
     const { userLogin } = useAuth()
+    const location = useLocation()
+    const navigate = useNavigate()
+
 
     const {
         register,
@@ -17,9 +21,21 @@ const Login = () => {
 
         userLogin(email, password)
             .then(result => {
-                console.log(result.user);
+                navigate(location.state || "")
+                toast.success("Login successfully", {
+                    theme: "colored",
+                    transition: Flip,
+                    autoClose: 2000,
+                })
             })
             .catch(error => {
+                if (error.message.includes("invalid-credential")) {
+                    toast.error("Incorrect email or password", {
+                        autoClose: 2000,
+                        theme: "colored",
+                        transition: Flip,
+                    })
+                }
                 console.log(error);
             })
 

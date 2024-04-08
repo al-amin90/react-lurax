@@ -20,6 +20,7 @@ const SingUp = () => {
             toast.error("Password must have 6 character", {
                 theme: "colored",
                 transition: Flip,
+                autoClose: 2000,
             })
             return;
         }
@@ -27,13 +28,15 @@ const SingUp = () => {
             toast.error("Must have a UpperCase latter", {
                 theme: "colored",
                 transition: Flip,
+                autoClose: 2000,
             })
             return
         }
         if (!/^(?=.*[a-z])/.test(password)) {
-            toast.error("Must have a lowerCase latter", {
+            toast.error("Must have a LowerCase latter", {
                 theme: "colored",
                 transition: Flip,
+                autoClose: 2000,
             })
             return
         }
@@ -45,6 +48,7 @@ const SingUp = () => {
                 toast.success("Account create successfully", {
                     theme: "colored",
                     transition: Flip,
+                    autoClose: 2000,
                 })
                 console.log(result.user);
             })

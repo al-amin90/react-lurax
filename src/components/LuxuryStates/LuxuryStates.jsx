@@ -3,7 +3,6 @@ import LuxuryState from "../LuxuryState/LuxuryState";
 
 const LuxuryStates = () => {
     const allStates = useLoaderData();
-    console.log(allStates);
 
     return (
         <div className='bg-white py-16'>
