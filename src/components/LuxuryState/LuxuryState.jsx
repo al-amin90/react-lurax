@@ -36,7 +36,6 @@ const LuxuryState = ({ state }) => {
                     <div className='  text-gray-600 mb-3'>
                         <h5 className='text-base font-semibold flex items-center gap-2'><FaLocationDot className="text-[#1ABA9B]"></FaLocationDot> Location: {location}</h5>
                         <h5 className='text-base font-semibold flex items-center gap-2'><FaChartArea className="text-[#1ABA9B]"></FaChartArea> Area: {area}</h5>
-
                     </div>
                     <Link to={`/state/${id}`}>
                         <button className="btn btn-md bg-gradient-to-r mb-3 from-[#1debc1] to-[#1ABA9B] font-semibold text-base w-full text-white">View Property</button>

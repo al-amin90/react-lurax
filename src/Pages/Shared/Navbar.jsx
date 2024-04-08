@@ -7,7 +7,7 @@ const Navbar = () => {
 
     const navLinks = <>
         <li><Link className='text-white bg-[#0c102296] font-bold shadow-xl py-2 px-4 rounded border border-gray-500' to="/">Home</Link></li>
-        <li><Link className='text-white py-2 px-4' to="/">Update</Link></li>
+        <li><Link className='text-white py-2 px-4' to="/update">Update</Link></li>
         <li><Link className='text-white py-2 px-4' to="/">User</Link></li>
     </>
 

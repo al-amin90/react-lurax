@@ -7,6 +7,7 @@ import Home from "../Pages/Home/Home";
 import SingUp from "../Pages/SingUp/SingUp";
 import Login from "../Pages/LogIn/Login";
 import LuxuryStateDetails from "../Pages/LuxuryStateDetails/LuxuryStateDetails";
+import UpdateProfile from "../Pages/UpdateProfile/UpdateProfile";
 
 const router = createBrowserRouter([
     {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
                 path: '/state/:id',
                 element: <LuxuryStateDetails></LuxuryStateDetails>,
                 loader: () => fetch('/sagments.json')
+            },
+            {
+                path: '/update',
+                element: <UpdateProfile></UpdateProfile>
             }
         ]
     },
