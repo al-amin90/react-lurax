@@ -2,9 +2,14 @@ import { useForm } from "react-hook-form";
 import { FaGithub, FaGoogle } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import useAuth from "../../Hooks/useAuth";
+import { useEffect } from "react";
 
 const UpdateProfile = () => {
     const { createUser, userUpdate } = useAuth()
+
+    useEffect(() => {
+        document.title = "UpdateProfile - LURAXRE"
+    }, [])
 
     const {
         register,

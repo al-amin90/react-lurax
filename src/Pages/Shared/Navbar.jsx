@@ -9,9 +9,10 @@ const Navbar = () => {
         <li><NavLink
             className={({ isActive }) => isActive ? 'text-white bg-[#0c102296] font-bold shadow-xl py-2 px-4 rounded border border-gray-500' : 'text-white py-2 px-4'} to="/">Home</NavLink></li>
         <li><NavLink
-            className={({ isActive }) => isActive ? 'text-white bg-[#0c102296] font-bold shadow-xl py-2 px-4 rounded border border-gray-500' : 'text-white py-2 px-4'} to="/update">Update</NavLink></li>
+            className={({ isActive }) => isActive ? 'text-white bg-[#0c102296] font-bold shadow-xl py-2 px-4 rounded border border-gray-500' : 'text-white py-2 px-4'} to="/aboutUs">About Us</NavLink></li>
         <li><NavLink
-            className={({ isActive }) => isActive ? 'text-white bg-[#0c102296] font-bold shadow-xl py-2 px-4 rounded border border-gray-500' : 'text-white py-2 px-4'} to="user">User</NavLink></li>
+            className={({ isActive }) => isActive ? 'text-white bg-[#0c102296] font-bold shadow-xl py-2 px-4 rounded border border-gray-500' : 'text-white py-2 px-4'} to="/update">UpdateProfile </NavLink></li>
+
     </>
 
 
@@ -38,16 +39,15 @@ const Navbar = () => {
                     <div className=' justify-end'>
                         {
                             user ? <div className='flex items-center'>
-                                <div className="dropdown dropdown-end mr-5">
+                                <div className="dropdown dropdown-hover dropdown-end md:mr-5 mr-3">
                                     <div tabIndex={0} role="button" className="btn btn-ghost btn-circle mt-2 avatar">
-                                        <div className="w-16 rounded-full">
+                                        <div className="w-12 rounded-full">
                                             <img alt="user img" className='' src={user.photoURL} />
                                         </div>
                                     </div>
                                     <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
 
-                                        <li><a>Logout</a></li>
-                                        <li><a>Logout</a></li>
+                                        <li className='font-semibold ml-12'>{user.displayName}</li>
                                     </ul>
                                 </div>
                                 <Link>

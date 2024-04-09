@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate, useRouteError } from 'react-router-dom';
 
 const ErrorPage = () => {
     const navigate = useNavigate()
     const error = useRouteError()
     console.log(error);
+    useEffect(() => {
+        document.title = "ErrorPage - LURAXRE"
+    }, [])
     return (
         <div className='flex flex-col min-h-screen items-center justify-center'>
             <div className='text-center space-y-5'>

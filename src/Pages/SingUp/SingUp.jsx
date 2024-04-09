@@ -3,9 +3,13 @@ import { FaGithub, FaGoogle } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import useAuth from "../../Hooks/useAuth";
 import { Flip, toast } from "react-toastify";
+import { useEffect } from "react";
 
 const SingUp = () => {
     const { createUser, userUpdate } = useAuth()
+    useEffect(() => {
+        document.title = "SingUp - LURAXRE"
+    }, [])
 
     const {
         register,

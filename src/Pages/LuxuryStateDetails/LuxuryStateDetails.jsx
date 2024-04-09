@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FaChartArea, FaDollarSign } from 'react-icons/fa';
 import { FaLocationDot } from 'react-icons/fa6';
 import { useLoaderData, useParams } from 'react-router-dom';
 
 const LuxuryStateDetails = () => {
     const { id } = useParams();
+
+    useEffect(() => {
+        document.title = "StateDetails - LURAXRE"
+    }, [])
 
     const allState = useLoaderData()
     const state = allState.find(s => s.id === +id);

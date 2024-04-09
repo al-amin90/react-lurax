@@ -3,12 +3,16 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import useAuth from "../../Hooks/useAuth";
 import SocialMediaLogin from "../../components/SocialMediaLogin/SocialMediaLogin";
 import { Flip, toast } from "react-toastify";
+import { useEffect } from "react";
 
 const Login = () => {
     const { userLogin } = useAuth()
     const location = useLocation()
     const navigate = useNavigate()
 
+    useEffect(() => {
+        document.title = "Login - LURAXRE"
+    }, [])
 
     const {
         register,

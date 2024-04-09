@@ -11,6 +11,7 @@ import UpdateProfile from "../Pages/UpdateProfile/UpdateProfile";
 import PrivateRoute from "./PrivateRoute";
 import Loader from "../Pages/Loader/Loader";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
+import AboutUs from "../Pages/AboutUs/AboutUs";
 
 const router = createBrowserRouter([
     {
@@ -41,6 +42,13 @@ const router = createBrowserRouter([
             {
                 path: '/update',
                 element: <UpdateProfile></UpdateProfile>
+            },
+            {
+                path: '/aboutUs',
+                element: <PrivateRoute>
+                    <AboutUs></AboutUs>,
+                </PrivateRoute>,
+                loader: () => fetch('/tems.json')
             }
         ]
     },

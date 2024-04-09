@@ -7,7 +7,7 @@ const Footer = () => {
             <footer className="py-20 max-w-7xl w-11/12 mx-auto">
                 <div className="container py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
 
-                    <div className="grid grid-cols-5 mb-20 text-sm gap-x-3 gap-y-8">
+                    <div className="grid grid-cols-1 md:grid-cols-5 mb-20 text-sm gap-x-3 gap-y-8">
                         <div className="space-y-3 col-span-2">
                             <h3 className="tracking-wide mb-8 font-bold text-3xl uppercase ">LURAXRE</h3>
                             <p className='w-1/2 text-xs'>New York, 4140 Parker Rd. Allentown, New Mexico 31134</p>
@@ -33,7 +33,7 @@ const Footer = () => {
                         </div>
 
                         <div className="space-y-3 col-span-3">
-                            <h3 className="text-3xl font-semibold w-2/3">Need some professional help? Get your free consultation now!</h3>
+                            <h3 className="text-3xl font-semibold md:w-2/3">Need some professional help? Get your free consultation now!</h3>
                             <div className="space-y-1 py-6 flex gap-4 items-center">
                                 <img className="w-[6rem]" src={person} alt="" />
                                 <div className="text-lg font-bold">
