@@ -1,12 +1,16 @@
 import { useForm } from "react-hook-form";
-import { FaGithub, FaGoogle } from "react-icons/fa";
-import { Link } from 'react-router-dom';
+import { FaEyeSlash, FaGithub, FaGoogle } from "react-icons/fa";
+import { Link, useNavigate } from 'react-router-dom';
 import useAuth from "../../Hooks/useAuth";
 import { Flip, toast } from "react-toastify";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { FaEye } from "react-icons/fa";
 
 const SingUp = () => {
-    const { createUser, userUpdate } = useAuth()
+    const { createUser, userUpdate, setLoading, setUser } = useAuth()
+    const [isShowed, setIsShwed] = useState(true);
+    const navigate = useNavigate()
+
     useEffect(() => {
         document.title = "SingUp - LURAXRE"
     }, [])
@@ -24,24 +28,27 @@ const SingUp = () => {
             toast.error("Password must have 6 character", {
                 theme: "colored",
                 transition: Flip,
-                autoClose: 2000,
+                autoClose: 3000,
             })
+            setLoading(false)
             return;
         }
         if (!/^(?=.*[A-Z])/.test(password)) {
             toast.error("Must have a UpperCase latter", {
                 theme: "colored",
                 transition: Flip,
-                autoClose: 2000,
+                autoClose: 3000,
             })
+            setLoading(false)
             return
         }
         if (!/^(?=.*[a-z])/.test(password)) {
             toast.error("Must have a LowerCase latter", {
                 theme: "colored",
                 transition: Flip,
-                autoClose: 2000,
+                autoClose: 3000,
             })
+            setLoading(false)
             return
         }
 
@@ -49,15 +56,23 @@ const SingUp = () => {
         createUser(email, password)
             .then(result => {
                 userUpdate(name, imageurl)
+                setLoading(false)
+                console.log(result.user);
+                navigate('/')
                 toast.success("Account create successfully", {
                     theme: "colored",
                     transition: Flip,
-                    autoClose: 2000,
+                    autoClose: 3000,
                 })
-                console.log(result.user);
             })
             .catch(error => {
+                setLoading(false)
                 console.log(error);
+                toast.error(error.message, {
+                    theme: "colored",
+                    transition: Flip,
+                    autoClose: 3000,
+                })
             })
     }
 
@@ -99,9 +114,17 @@ const SingUp = () => {
                                 <label className="label mb-1">
                                     <span className="label-text text-white">Password</span>
                                 </label>
-                                <input
-                                    {...register("password", { required: true })}
-                                    type="password" placeholder="Password" className="input input-bordered rounded-md " />
+                                <div className="relative flex">
+                                    <input
+                                        {...register("password", { required: true })}
+                                        type={isShowed ? "password" : "text"} placeholder="Password" className="input w-full input-bordered rounded-md " />
+                                    <div onClick={() => setIsShwed(!isShowed)} className="absolute right-4 text-xl top-4">
+                                        {isShowed ?
+                                            <FaEyeSlash></FaEyeSlash>
+                                            : <FaEye />
+                                        }
+                                    </div>
+                                </div>
                                 {errors.password && <span className="mt-2 text-red-500"> This Password field is required</span>}
                             </div>
 

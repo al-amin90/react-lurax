@@ -13,6 +13,10 @@ const SocialMediaLogin = () => {
                 console.log(result.user);
                 navigate(location.state || "")
             })
+            .catch(error => {
+                setLoading(false)
+                console.log(error);
+            })
     }
 
     return (

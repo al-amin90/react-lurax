@@ -6,7 +6,7 @@ import { Flip, toast } from "react-toastify";
 import { useEffect } from "react";
 
 const Login = () => {
-    const { userLogin } = useAuth()
+    const { userLogin, setLoading } = useAuth()
     const location = useLocation()
     const navigate = useNavigate()
 
@@ -26,6 +26,7 @@ const Login = () => {
         userLogin(email, password)
             .then(result => {
                 navigate(location.state || "")
+                setLoading(false)
                 toast.success("Login successfully", {
                     theme: "colored",
                     transition: Flip,
@@ -33,13 +34,20 @@ const Login = () => {
                 })
             })
             .catch(error => {
+                setLoading(false)
                 if (error.message.includes("invalid-credential")) {
                     toast.error("Incorrect email or password", {
                         autoClose: 2000,
                         theme: "colored",
                         transition: Flip,
                     })
+                    return;
                 }
+                toast.error(error.message, {
+                    autoClose: 2000,
+                    theme: "colored",
+                    transition: Flip,
+                })
                 console.log(error);
             })
 
