@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
 
 const Navbar = () => {
     const { user, logout } = useAuth()
+
+    console.log(user);
 
     const navLinks = <>
         <li><NavLink
@@ -18,7 +20,7 @@ const Navbar = () => {
 
     return (
         <div className='max-w-7xl w-11/12 mx-auto'>
-            <div className="navbar  pb-5 pt-7 px-0">
+            <div className="navbar pb-5 pt-7 px-0">
                 <div className="navbar-start">
                     <div className="dropdown  z-10">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -35,19 +37,19 @@ const Navbar = () => {
                         {navLinks}
                     </ul>
                 </div>
-                <div className="navbar-end ">
+                <div className="navbar-end relative">
                     <div className=' justify-end'>
                         {
-                            user ? <div className='flex relative items-center'>
+                            user ? <div className='flex  items-center'>
                                 <div className="dropdown absolute right-28 dropdown-hover dropdown-end md:mr-5 mr-3">
                                     <div tabIndex={0} role="button" className="btn btn-ghost btn-circle mt-2 avatar">
                                         <div className="w-12 rounded-full">
-                                            <img alt="user img" className='' src={user.photoURL} />
+                                            <img src={user?.photoURL} />
                                         </div>
                                     </div>
                                     <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-10 p-2 shadow bg-base-100 rounded-box w-52">
 
-                                        <li className='font-semibold ml-12'>{user.displayName}</li>
+                                        <li className='font-semibold ml-12'>{user?.displayName}</li>
                                     </ul>
                                 </div>
                                 <Link>

@@ -56,14 +56,16 @@ const SingUp = () => {
         createUser(email, password)
             .then(result => {
                 userUpdate(name, imageurl)
-                setLoading(false)
-                console.log(result.user);
-                navigate('/')
-                toast.success("Account create successfully", {
-                    theme: "colored",
-                    transition: Flip,
-                    autoClose: 3000,
-                })
+                    .then(() => {
+                        setLoading(false)
+                        console.log(result.user);
+                        navigate('/')
+                        toast.success("Account create successfully", {
+                            theme: "colored",
+                            transition: Flip,
+                            autoClose: 3000,
+                        })
+                    })
             })
             .catch(error => {
                 setLoading(false)
