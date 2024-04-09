@@ -26,10 +26,10 @@ const AboutUs = () => {
                             <h4 className=' mb-5 font-semibold text-2xl'>Discover your perfect rental! <br /> Vibrant cities. Beautiful homes.</h4>
                             <p className='text-sm w-4/5 '>We turn our clients’ ideas and visions into award-winning projects. We work with the intent to exceed our customers’ expectations in terms of safety, quality, functionality and aesthetics and provide assets that stand the test of time.</p>
                         </div>
-                        <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1000">
-                            <h4 className='mt-14 mb-5 font-semibold text-2xl'>Restancy is leading the way in creating unique <br /> real estate. Discover your perfect rental!</h4>
-                            <p className='text-sm w-4/5 text-gray-200'>We provide professional legal support in real estate transactions, which guarantees the safety and profitability of transactions. Our real estate database is one of the largest. Therefore, we will always be able to offer you a property in accordance with your requirements.</p>
-                        </div>
+
+                        <h4 data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1000" className='mt-14 mb-5 font-semibold text-2xl'>Restancy is leading the way in creating unique <br /> real estate. Discover your perfect rental!</h4>
+                        <p data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1200" className='text-sm w-4/5 text-gray-200'>We provide professional legal support in real estate transactions, which guarantees the safety and profitability of transactions. Our real estate database is one of the largest. Therefore, we will always be able to offer you a property in accordance with your requirements.</p>
+
                     </div>
                 </div>
             </div>

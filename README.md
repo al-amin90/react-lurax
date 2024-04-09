@@ -14,9 +14,11 @@ https://react-lurax.web.app/
 - **react-hook-form**
 - **AOS-packages**
 - **Swiper-slider**
-- **react-spinner**
-- **react-toastify**
-- **react icons**
+- react-spinner
+- react-toastify
+- react icons
+- daisy ui
+- firebase
 
 
 ## Features and Characteristics
