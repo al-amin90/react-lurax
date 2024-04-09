@@ -38,14 +38,14 @@ const Navbar = () => {
                 <div className="navbar-end ">
                     <div className=' justify-end'>
                         {
-                            user ? <div className='flex items-center'>
-                                <div className="dropdown dropdown-hover dropdown-end md:mr-5 mr-3">
+                            user ? <div className='flex relative items-center'>
+                                <div className="dropdown absolute right-28 dropdown-hover dropdown-end md:mr-5 mr-3">
                                     <div tabIndex={0} role="button" className="btn btn-ghost btn-circle mt-2 avatar">
                                         <div className="w-12 rounded-full">
                                             <img alt="user img" className='' src={user.photoURL} />
                                         </div>
                                     </div>
-                                    <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                                    <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-10 p-2 shadow bg-base-100 rounded-box w-52">
 
                                         <li className='font-semibold ml-12'>{user.displayName}</li>
                                     </ul>

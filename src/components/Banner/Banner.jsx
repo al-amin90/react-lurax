@@ -19,7 +19,7 @@ const Banner = () => {
 
 
     return (
-        <div className='min-h-[calc(100vh-96px)] '>
+        <div className='h-[20rem] -z-10 md:min-h-[calc(100vh-96px)] '>
             <Swiper
                 pagination={{
                     dynamicBullets: true,
