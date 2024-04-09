@@ -1,9 +1,12 @@
 import React from 'react';
 
 const SingleTeam = ({ team }) => {
-    const { name, title, description, image } = team;
+    const { name, title, description, image, animation, delay, duration, easing } = team;
+
     return (
-        <div className="flex flex-col bg-white rounded-xl py-10 px-5  text-center">
+        <div data-aos={animation} data-aos-delay={delay}
+            data-aos-duration={duration}
+            data-aos-easing={easing} className="flex flex-col bg-white rounded-xl py-10 px-5  text-center">
             <img alt="" className="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full bg-gray-500" src={image} />
             <p className="text-xl font-bold text-black leading-tight">{name}</p>
             <p className="text-gray-600 mt-2">{title}</p>

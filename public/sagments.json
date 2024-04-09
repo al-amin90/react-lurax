@@ -14,7 +14,11 @@
             "Private Beach",
             "Gourmet Kitchen"
         ],
-        "logo": "https://i.postimg.cc/2STD6KkN/212c1836bd0d2363eb4ffb48fe0b30e9.png"
+        "logo": "https://i.postimg.cc/2STD6KkN/212c1836bd0d2363eb4ffb48fe0b30e9.png",
+        "animation": "fade-up",
+        "duration": "900",
+        "easing": "ease",
+        "delay": "0"
     },
     {
         "id": 2,
@@ -31,7 +35,11 @@
             "Fitness Center",
             "Concierge Service"
         ],
-        "logo": "https://i.postimg.cc/9XPNCqXv/32a518b36c76eb4e7d0298aa777e2282.jpg"
+        "logo": "https://i.postimg.cc/9XPNCqXv/32a518b36c76eb4e7d0298aa777e2282.jpg",
+        "animation": "fade-up",
+        "duration": "900",
+        "easing": "ease",
+        "delay": "200"
     },
     {
         "id": 3,
@@ -41,14 +49,18 @@
         "description": "Escape to paradise in this luxurious resort retreat. Surrounded by lush tropical gardens, pristine beaches, and world-class amenities, this destination is the epitome of indulgence. With luxurious accommodations, gourmet dining options, and a plethora of recreational activities, this resort offers an unparalleled vacation experience. Whether lounging by the pool, exploring the surrounding natural beauty, or indulging in spa treatments, guests are immersed in luxury at every turn.",
         "price": "$1,500/night",
         "status": "rent",
-        "area": "10000 sq ft",
+        "area": "9000 sq ft",
         "location": "Maldives",
         "facilities": [
             "Spa",
             "Private Villas",
             "Fine Dining"
         ],
-        "logo": "https://i.postimg.cc/yYQj8mMr/04d4758a4d132406546511dffd6cb121.jpg"
+        "logo": "https://i.postimg.cc/yYQj8mMr/04d4758a4d132406546511dffd6cb121.jpg",
+        "animation": "fade-up",
+        "duration": "900",
+        "easing": "ease",
+        "delay": "400"
     },
     {
         "id": 4,
@@ -65,7 +77,11 @@
             "Luxury Villas",
             "Helipad"
         ],
-        "logo": "https://i.postimg.cc/2STD6KkN/212c1836bd0d2363eb4ffb48fe0b30e9.png"
+        "logo": "https://i.postimg.cc/2STD6KkN/212c1836bd0d2363eb4ffb48fe0b30e9.png",
+        "animation": "fade-up",
+        "duration": "900",
+        "easing": "ease",
+        "delay": "0"
     },
     {
         "id": 5,
@@ -82,7 +98,11 @@
             "Swimming Pool",
             "Gated Entry"
         ],
-        "logo": "https://i.postimg.cc/9XPNCqXv/32a518b36c76eb4e7d0298aa777e2282.jpg"
+        "logo": "https://i.postimg.cc/9XPNCqXv/32a518b36c76eb4e7d0298aa777e2282.jpg",
+        "animation": "fade-up",
+        "duration": "900",
+        "easing": "ease",
+        "delay": "200"
     },
     {
         "id": 6,
@@ -98,7 +118,11 @@
             "Gourmet Kitchen",
             "Private Terrace"
         ],
-        "logo": "https://i.postimg.cc/yYQj8mMr/04d4758a4d132406546511dffd6cb121.jpg"
+        "logo": "https://i.postimg.cc/yYQj8mMr/04d4758a4d132406546511dffd6cb121.jpg",
+        "animation": "fade-up",
+        "duration": "900",
+        "easing": "ease",
+        "delay": "400"
     },
     {
         "id": 7,
@@ -115,7 +139,11 @@
             "Outdoor Kitchen",
             "Guest House"
         ],
-        "logo": "https://i.postimg.cc/9XPNCqXv/32a518b36c76eb4e7d0298aa777e2282.jpg"
+        "logo": "https://i.postimg.cc/9XPNCqXv/32a518b36c76eb4e7d0298aa777e2282.jpg",
+        "animation": "fade-up",
+        "duration": "900",
+        "easing": "ease",
+        "delay": "0"
     },
     {
         "id": 8,
@@ -132,7 +160,11 @@
             "Fitness Center",
             "Clubhouse"
         ],
-        "logo": "https://i.postimg.cc/yYQj8mMr/04d4758a4d132406546511dffd6cb121.jpg"
+        "logo": "https://i.postimg.cc/yYQj8mMr/04d4758a4d132406546511dffd6cb121.jpg",
+        "animation": "fade-up",
+        "duration": "900",
+        "easing": "ease",
+        "delay": "200"
     },
     {
         "id": 9,
@@ -149,6 +181,10 @@
             "Wine Cellar",
             "Home Gym"
         ],
-        "logo": "https://i.postimg.cc/2STD6KkN/212c1836bd0d2363eb4ffb48fe0b30e9.png"
+        "logo": "https://i.postimg.cc/2STD6KkN/212c1836bd0d2363eb4ffb48fe0b30e9.png",
+        "animation": "fade-up",
+        "duration": "900",
+        "easing": "ease",
+        "delay": "400"
     }
 ]

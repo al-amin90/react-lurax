@@ -4,55 +4,85 @@
         "name": "John Smith",
         "title": "Real Estate Agent",
         "description": "Experienced agent specializing in residential properties, dedicated to helping clients find their dream homes.",
-        "image": "https://i.postimg.cc/FsXhrDQX/Guy-Hawkins.png"
+        "image": "https://i.postimg.cc/FsXhrDQX/Guy-Hawkins.png",
+        "animation": "fade up",
+        "duration": "1000",
+        "easing": "ease"
     },
     {
         "id": 2,
         "name": "Emily Johnson",
         "title": "Property Manager",
         "description": "Detail-oriented manager overseeing property operations and ensuring tenant satisfaction in rental properties.",
-        "image": "https://i.postimg.cc/CxLT52PX/Cody-Fisher.png"
+        "image": "https://i.postimg.cc/CxLT52PX/Cody-Fisher.png",
+        "animation": "fade up",
+        "duration": "1000",
+        "easing": "ease",
+        "delay": "200"
     },
     {
         "id": 3,
         "name": "Michael Brown",
         "title": "Marketing Coordinator",
         "description": "Strategic marketer creating compelling campaigns to promote properties and drive sales in the market.",
-        "image": "https://i.postimg.cc/W3S0NhhQ/member1.png"
+        "image": "https://i.postimg.cc/W3S0NhhQ/member1.png",
+        "animation": "fade up",
+        "duration": "1000",
+        "easing": "ease",
+        "delay": "400"
     },
     {
         "id": 4,
         "name": "Jessica Martinez",
         "title": "Transaction Coordinator",
         "description": "Efficient coordinator managing paperwork and ensuring smooth transactions for buyers and sellers.",
-        "image": "https://i.postimg.cc/Ls2qJmKR/member2.png"
+        "image": "https://i.postimg.cc/Ls2qJmKR/member2.png",
+        "animation": "fade up",
+        "duration": "1000",
+        "easing": "ease",
+        "delay": "600"
     },
     {
         "id": 5,
         "name": "David Wilson",
         "title": "Financial Analyst",
         "description": "Analytical expert providing financial insights and advising on investment opportunities in real estate.",
-        "image": "https://i.postimg.cc/qRZgDntM/member3.png"
+        "image": "https://i.postimg.cc/qRZgDntM/member3.png",
+        "animation": "fade up",
+        "duration": "1000",
+        "easing": "ease"
     },
     {
         "id": 6,
         "name": "Sarah Thompson",
         "title": "Content Writer",
         "description": "Creative writer producing engaging content to showcase properties and attract potential buyers.",
-        "image": "https://i.postimg.cc/7ZyhRqL7/member4.png"
+        "image": "https://i.postimg.cc/7ZyhRqL7/member4.png",
+        "animation": "fade up",
+        "duration": "1000",
+        "easing": "ease",
+        "delay": "200"
     },
     {
         "id": 7,
         "name": "Daniel Garcia",
         "title": "Graphic Designer",
         "description": "Talented designer creating visually appealing materials to market properties and enhance brand image.",
-        "image": "https://i.postimg.cc/HLvMcjw5/men121.webp"
+        "image": "https://i.postimg.cc/HLvMcjw5/men121.webp",
+        "animation": "fade up",
+        "duration": "1000",
+        "easing": "ease",
+        "delay": "400"
     },
     {
         "id": 8,
         "name": "Jennifer Rodriguez",
         "title": "Customer Relations Manager",
         "description": "Dedicated manager fostering positive relationships with clients and ensuring exceptional customer service.",
-        "image": "https://i.postimg.cc/MZ5SyRch/Robert-Fox.webp"
+        "image": "https://i.postimg.cc/MZ5SyRch/Robert-Fox.webp",
+        "animation": "fade up",
+        "duration": "1000",
+        "easing": "ease",
+        "delay": "600"
     }
 ]

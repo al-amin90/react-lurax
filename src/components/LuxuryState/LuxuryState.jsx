@@ -3,11 +3,11 @@ import { FaLocationDot } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
 const LuxuryState = ({ state }) => {
-    const { id, estate_title, segment_name, image, description, price, status, area, location, facilities, logo } = state;
+    const { id, estate_title, segment_name, image, description, price, status, area, location, facilities, logo, animation, duration, easing, delay } = state;
 
 
     return (
-        <div className='shadow-lg'>
+        <div data-aos={animation} data-aos-delay={delay} data-aos-duration={duration} data-aos-easing={easing} className='shadow-lg'>
             <div className='relative flex flex-col'>
                 <img className='h-52 object-cover w-full' src={image} alt="" />
                 <img className="rounded-full  absolute top-[10rem] left-6 w-[6rem]" src={logo} alt="" />
