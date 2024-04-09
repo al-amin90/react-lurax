@@ -1,15 +1,18 @@
 import React, { useEffect, useRef, useState } from 'react';
+// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 
 // import required modules
-import { Pagination } from 'swiper/modules';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
-const Banner = () => {
+
+const Banner2 = () => {
     const [images, setImages] = useState([])
     useEffect(() => {
         fetch('./bannerImg.json')
@@ -17,14 +20,20 @@ const Banner = () => {
             .then(data => setImages(data))
     }, [])
 
-
     return (
         <div className='h-[20rem] -z-10 md:min-h-[calc(100vh-96px)] '>
             <Swiper
-                pagination={{
-                    dynamicBullets: true,
+                spaceBetween={30}
+                centeredSlides={true}
+                autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
                 }}
-                modules={[Pagination]}
+                pagination={{
+                    clickable: true,
+                }}
+                navigation={true}
+                modules={[Autoplay, Pagination, Navigation]}
                 className="mySwiper"
             >
                 {
@@ -35,10 +44,9 @@ const Banner = () => {
                         </div>
                     </SwiperSlide>)
                 }
-
             </Swiper>
         </div>
     );
 };
 
-export default Banner;
+export default Banner2;
