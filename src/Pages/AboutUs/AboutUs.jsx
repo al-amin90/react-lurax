@@ -15,7 +15,7 @@ const AboutUs = () => {
             <div>
                 <h1 data-aos="fade-up" data-aos-duration="1000" className='font-bold text-5xl mt-16 my-6'>Our story </h1>
                 <p data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200"
-                    className='mb-16 w-full md:w-2/6'>Real Estate is one of the most experienced and respected companies. We have been in business for over 20 years and are always open to new experiences.</p>
+                    className='mb-16 w-full md:w-2/6'>LURAXRE is one of the most experienced and respected companies. We have been in business for over 20 years and are always open to new experiences.</p>
                 <div className='grid grid-cols-1 lg:grid-cols-5  gap-28'>
                     <div data-aos="fade-up" data-aos-duration="1600" data-aos-delay="600" className="col-span-2">
 

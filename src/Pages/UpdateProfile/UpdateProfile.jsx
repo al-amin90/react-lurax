@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import useAuth from "../../Hooks/useAuth";
 import { useEffect } from "react";
 import { Result } from "postcss";
+import { Flip, toast } from "react-toastify";
 
 const UpdateProfile = () => {
     const { createUser, userUpdate, user, setLoading } = useAuth()
@@ -25,6 +26,11 @@ const UpdateProfile = () => {
             .then(() => {
                 setLoading(false)
                 console.log("update succefullay");
+                toast.success("Profile Update successfully", {
+                    theme: "colored",
+                    transition: Flip,
+                    autoClose: 2000,
+                })
             })
     }
     return (
